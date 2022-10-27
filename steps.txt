@@ -1,0 +1,55 @@
+html:
+create a container to hold whole main area.
+divs- result-area, result in span,
+      clipboard (btn, id)
+    another container for choosing type settings
+    label for pwd length & input of type length with an id & val.
+    sub container for settings for the checkboxes
+    checkboxes:
+     labels: uppercase, lower case, num & symbols.
+     inputs for above.
+button to show result.
+
+CSS:
+ Gonna figure out when actually get to it.
+
+Js:
+4 generate functions for 4 labels.
+  for lowercase, uppercase & num: String.fromCharCode - net-comber/charset.html
+   for random: 
+    Math.floor(Math.random()*num)+ n; //num based on type, n for range.
+  for symbols make a str of symbols to use math.random.
+
+  make an obj random of above functions:
+   e.g: lower: lowercase etc.
+ 
+ DOM:
+ create const for result, length, uppercase, lowercase, num, symbols generate btn & clipboard btn. by id in html.
+
+ add events:
+  generate btn and cpy to clipboard.
+  generate:
+   for click.
+     get val of checkboxes are checked and length.
+     conv str in num by "+".
+     check for all the functions.
+
+ Make a separete function to pass right above functions to generate password
+ and set it as result elements innerText.
+ 
+ generate (above elements):
+  make password var, filter unchecked settings & loop the entered length.
+  then call generator func for each type.
+  finally return the final pwd to disp.
+  . empty pwd at 1st,
+  . car to store types of 4 functions.
+  . make arr of the above {types}.
+  . use filter func for checked items by Obj.val.
+  . if 0 checked return "".
+  . use for loop for < length, in the for run a forEach
+    type, in it get the checked func names by keys type.
+  . take generated pwd str and add randomfunc and a callback...
+  . outside of loop, slice length of generated pwd.
+  . store above in final pwd and return it.
+clipboard: google it.
+  

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ran Pwd Gen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Random Password:</h2>
+      <div class="result-block">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="fa-solid fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="Pwd-length">Password-Length</label>
+          <input type="number" id="length" min="4" max="10" value="10" />
+        </div>
+
+        <div class="setting">
+          <label for="upper">Upper-case</label>
+          <input type="checkbox" id="upper" checked />
+        </div>
+
+        <div class="setting">
+          <label for="Lower-case">Lower-case</label>
+          <input type="checkbox" id="lower" checked />
+        </div>
+
+        <div class="setting">
+          <label for="numbers">Numbers</label>
+          <input type="checkbox" id="number" checked />
+        </div>
+
+        <div class="setting">
+          <label for="symbols">Symbols</label>
+          <input type="checkbox" id="symbol" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">Generate Password</button>
+    </div>
+
+    <p class="note">
+      NOTE: Do write the Password in case up actually wanna use it ✌️
+    </p>
+    <!--Main container end. -->
+    <script src="index.js"></script>
+  </body>
+</html>
