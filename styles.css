@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Mono", monospace;
+  transition: 150ms;
 }
 
 body {
@@ -32,6 +33,10 @@ h2 {
   text-align: center;
 }
 
+h2:hover {
+  transform: scale(1.03);
+}
+
 input[type="checkbox"] {
   margin-right: 0;
   cursor: pointer;
@@ -44,6 +49,7 @@ a {
 
 a:hover {
   color: black;
+  transition: 250ms;
 }
 
 .git1:hover {
@@ -67,6 +73,10 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.container:hover {
+  transform: scale(1.03);
+}
+
 .result-block {
   display: flex;
   justify-content: flex-start;
@@ -88,6 +98,7 @@ a:hover {
 #result {
   font-size: 1rem;
 }
+
 .result-block .btn {
   font-size: 20px;
   position: absolute;
@@ -95,6 +106,10 @@ a:hover {
   right: 5px;
   height: 40px;
   width: 40px;
+}
+
+.result-block:hover {
+  transform: scale(1.03);
 }
 
 .btn {
@@ -110,6 +125,7 @@ a:hover {
 .btn:hover {
   color: white;
   background-color: black;
+  transform: scale(1.03);
 }
 
 .btn-large {
@@ -123,6 +139,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
+}
+
+.setting:hover {
+  transform: scale(1.03);
 }
 
 @media (max-width: 500px) {
