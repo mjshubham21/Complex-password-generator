@@ -46,6 +46,10 @@ a:hover {
   color: black;
 }
 
+.git1:hover {
+  transform: scale(1.5);
+}
+
 .note:hover {
   color: aliceblue;
 }
